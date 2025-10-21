@@ -1,0 +1,37 @@
+:root{
+  --primary:#00bfa5;        /* elegant turquoise */
+  --primary-dark:#009688;
+  --text:#263238;           /* blue-grey 900 */
+  --muted:#546e7a;          /* blue-grey 600 */
+  --bg:#f9fbfc;             /* off-white */
+}
+
+html,body{scroll-behavior:smooth;background:var(--bg);color:var(--text);}
+.nav-wrapper .brand-logo{font-weight:700;letter-spacing:.5px;}
+.section{padding:4rem 0;}
+.hero{
+  min-height:90vh;display:flex;align-items:center;
+  background:linear-gradient(180deg, rgba(0,191,165,.08), transparent);
+}
+.hero .name{font-size:2.6rem;font-weight:800;margin-bottom:.4rem;}
+.hero .title{font-size:1.2rem;color:var(--muted);}
+
+.btn-primary{
+  background:var(--primary)!important;
+}
+.btn-outline{
+  border:2px solid var(--primary);color:var(--primary);
+  background:transparent;
+}
+.btn-outline:hover{background:var(--primary);color:white;}
+
+.avatar{
+  width:180px;height:180px;border-radius:999px;object-fit:cover;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);border:4px solid white;
+}
+
+.card{border-radius:16px;overflow:hidden;}
+.card .card-title{font-weight:700;}
+
+.footer{padding:2rem 0;color:#78909c;}
+.footer a{color:inherit;}
