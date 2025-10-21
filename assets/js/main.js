@@ -1,17 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Init sidenav (Materialize)
   var elems = document.querySelectorAll('.sidenav');
   M.Sidenav.init(elems, {});
-
-  // Typed.js
-  var typedEl = document.getElementById('typed-strings');
-  if (typedEl){
+  if (document.getElementById('typed')){
     new Typed('#typed', {
-      stringsElement: '#typed-strings',
-      typeSpeed: 45,
-      backSpeed: 25,
-      backDelay: 1200,
-      loop: true
+      strings: ['Cloud Computing','Virtualisation','Big Data','DevOps','AI Solutions','Innovation Digitale'],
+      typeSpeed: 45, backSpeed: 25, backDelay: 1200, loop: true
     });
   }
 });
