@@ -1,0 +1,1 @@
+Déposez ici vos images (photo de profil, logos, etc.)
