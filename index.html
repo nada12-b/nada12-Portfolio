@@ -8,9 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/custom.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script defer src="assets/js/main.js"></script>
 </head>
+
 <body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <h2>Nada Aznak — Cloud & Virtualization Engineering</h2>
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
   <header>
     <nav class="container">
       <div class="logo">NA</div>
@@ -21,38 +32,141 @@
         <li><a href="#projects">Projets</a></li>
         <li><a href="#experience">Expérience</a></li>
         <li><a href="#education">Éducation</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#languages">Langues</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="education" class="fade-in">
-    <div class="container">
-      <h2>Éducation</h2>
-      <p><strong>Université Internationale de Rabat (UIR)</strong><br>ESIN — Ingénierie en Cloud Computing & Virtualization<br>2023 – 2026</p>
-      <p><strong>Université Internationale de Rabat (UIR)</strong><br>ESIN — Cycle Préparatoire Intégré en Ingénierie Informatique<br>2021 – 2023</p>
-      <p><strong>Lycée Baraim El-Razi, Tétouan</strong><br>Baccalauréat en Sciences Physiques et Chimiques<br>2018 – 2021</p>
+  <!-- Home -->
+  <section id="home" class="fade-in">
+    <div class="container home-content">
+      <div class="text">
+        <h1>Nada Aznak</h1>
+        <h2>Cloud & Virtualization Engineering</h2>
+        <h3><span id="typed"></span></h3>
+        <div class="buttons">
+          <a class="btn primary" href="resume/cv_fr.pdf" target="_blank">Télécharger le CV</a>
+          <a class="btn secondary" href="resume/cv_en.pdf" target="_blank">Download CV</a>
+          <a class="btn secondary" href="https://github.com/nada12-b" target="_blank">GitHub</a>
+          <a class="btn secondary" href="https://linkedin.com/in/nada-aznak-672aa3303" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="assets/img/profile.jpg" alt="Nada Aznak" />
+      </div>
     </div>
   </section>
 
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Étudiante passionnée par les technologies Cloud, la Virtualisation et le Big Data, je conçois des solutions performantes, scalables et sécurisées. Je combine rigueur technique, curiosité intellectuelle et esprit d’analyse pour créer des projets innovants alliant développement logiciel, infrastructure cloud et intelligence artificielle.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li><strong>Programmation :</strong> Python, C, JavaScript, TypeScript, Java, SQL</li>
+        <li><strong>Développement Web/Mobile :</strong> HTML, CSS, React, Angular, Node.js, Express, RESTful APIs, Redux, Flutter</li>
+        <li><strong>Cloud & Virtualisation :</strong> Azure, AWS, Google Cloud, Serverless, DevOps</li>
+        <li><strong>Gestion des Données :</strong> SQL, NoSQL (MongoDB, MySQL), Cloud Data Warehousing, Big Data, BI</li>
+        <li><strong>Architecture Cloud :</strong> Microservices, API RESTful, Serverless, Cloud Native</li>
+        <li><strong>Réseaux & Systèmes :</strong> SDN, Linux, Windows, Virtualisation (VMware)</li>
+        <li><strong>Outils & Technologies :</strong> Git, Docker, Kubernetes, Azure DevOps, Cloud Functions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <div class="card"><h3>🌍 Earthquake Alert — Real-Time Big Data</h3><p>Surveillance sismique avec Kafka + ELK + Docker. Données USGS, dashboards Kibana.</p><p><em>Compétences :</em> Python · Kafka · Elasticsearch · Docker</p></div>
+        <div class="card"><h3>☁️ Web App scalable sur AWS</h3><p>ALB, Auto Scaling, RDS Multi-AZ. Tests 100k requêtes, 99.9% disponibilité.</p><p><em>Compétences :</em> EC2 · ALB · RDS · IAM · CloudWatch</p></div>
+        <div class="card"><h3>🍽️ JavaFX — Gestion Restaurant Universitaire</h3><p>Commande repas et gestion des stocks.</p><p><em>Compétences :</em> JavaFX · MySQL · MVC</p></div>
+        <div class="card"><h3>📚 Python — Gestion de Bibliothèque</h3><p>Application desktop gestion emprunts, retards et comptes étudiants.</p><p><em>Compétences :</em> Python · Tkinter · SQLite</p></div>
+        <div class="card"><h3>🧠 AI-Powered Mental Health Advisor</h3><p>Chatbot interactif via Azure AI et D-ID.</p><p><em>Compétences :</em> React · Flask · Azure Cognitive Services</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="fade-in">
+    <div class="container">
+      <h2>Expérience</h2>
+      <div class="experience-list">
+        <div class="exp-card"><h3>Stage d’initiation — Amendis (Août 2023)</h3><p>Application PHP/MySQL pour la gestion d’interventions.</p></div>
+        <div class="exp-card"><h3>Stage Technicien — EQDOM (Juillet–Août 2024)</h3><p>Application simulation crédit (React Native, Spring Boot, Keycloak).</p></div>
+        <div class="exp-card"><h3>Stage Assistant — CNRST (Juin–Août 2025)</h3><p>Analyse HPC (NPB) et tableau de bord interactif.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="fade-in">
+    <div class="container">
+      <h2>Éducation</h2>
+      <h3>Université Internationale de Rabat (UIR)</h3>
+      <p><strong>ESIN — Ingénierie en Cloud Computing & Virtualization</strong></p>
+      <p>2023 – 2026</p>
+
+      <h3>Université Internationale de Rabat (UIR)</h3>
+      <p><strong>ESIN — Cycle Préparatoire Intégré en Ingénierie Informatique</strong></p>
+      <p>2021 – 2023</p>
+
+      <h3>Lycée Baraim El-Razi, Tétouan</h3>
+      <p><strong>Baccalauréat en Sciences Physiques et Chimiques</strong></p>
+      <p>2018 – 2021</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
   <section id="certifications" class="fade-in">
     <div class="container">
       <h2>Certifications</h2>
-      <p>Voici un aperçu de mes certifications techniques dans le Cloud, la Sécurité, la Data et la Gestion de projet.</p>
+      <p>Voici un aperçu de mes certifications techniques </p>
       <div class="certifications-grid">
         <div class="cert-card"><img src="assets/img/aws.svg" alt="AWS"><h3>AWS Academy Cloud Foundations</h3></div>
         <div class="cert-card"><img src="assets/img/aws.svg" alt="AWS"><h3>AWS Academy Cloud Architecting</h3></div>
         <div class="cert-card"><img src="assets/img/aws.svg" alt="AWS"><h3>AWS Academy Cloud Web Application Builder</h3></div>
         <div class="cert-card"><img src="assets/img/cisco.svg" alt="Cisco"><h3>Endpoint Security (Cisco)</h3></div>
         <div class="cert-card"><img src="assets/img/cisco.svg" alt="Cisco"><h3>Introduction to Data Science (Cisco)</h3></div>
-        <div class="cert-card"><img src="assets/img/cisco.svg" alt="Cisco"><h3>Introduction to IoT (Cisco)</h3></div>
-        <div class="cert-card"><img src="assets/img/cisco.svg" alt="Cisco"><h3>Networking Basics (Cisco)</h3></div>
         <div class="cert-card"><img src="assets/img/hp_certificate.png" alt="HP LIFE"><h3>HP LIFE — Agile Project Management</h3></div>
       </div>
     </div>
   </section>
 
-  <footer><p>© 2025 Nada Aznak — All rights reserved.</p></footer>
+  <!-- Languages -->
+  <section id="languages" class="fade-in">
+    <div class="container">
+      <h2>Langues</h2>
+      <ul>
+        <li>🇫🇷 Français — Courant</li>
+        <li>🇬🇧 Anglais — Courant</li>
+        <li>🇲🇦 Arabe — Langue maternelle</li>
+        <li>🇪🇸 Espagnol — Intermédiaire</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <p><strong>Email :</strong> <a href="mailto:nada.aznak@uir.ac.ma">nada.aznak@uir.ac.ma</a></p>
+      <p><strong>Téléphone :</strong> +212 6 82 67 00 50</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nada Aznak — All rights reserved.</p>
+  </footer>
 </body>
 </html>
