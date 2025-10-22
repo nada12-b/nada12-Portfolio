@@ -1,6 +1,3 @@
-# Portfolio — Nada Aznak 
-Pages : Accueil (index), Certifications, sections About/Skills/Projects/Experience/Education/Languages/Contact.
+# Portfolio — Nada Aznak (Mauve)
 
-site : https://nada12-b.github.io
-
-
+Site personnel déployable sur GitHub Pages.

@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nada Aznak | Cloud & Virtualization Engineering</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/custom.css" />
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script defer src="assets/js/main.js"></script>
 </head>
-
 <body>
-  <!-- ===== Loader ===== -->
+  <!-- Loader -->
   <div id="loader">
     <div class="loader-content">
       <h2>Nada Aznak — Cloud & Virtualization Engineering</h2>
@@ -19,9 +20,8 @@
     </div>
   </div>
 
-  <!-- ===== Navbar ===== -->
   <header>
-    <nav>
+    <nav class="container">
       <div class="logo">NA</div>
       <ul class="nav-links">
         <li><a href="#home">Accueil</a></li>
@@ -37,119 +37,112 @@
     </nav>
   </header>
 
-  <!-- ===== Home ===== -->
+  <!-- Hero -->
   <section id="home" class="fade-in">
-    <div class="home-content">
+    <div class="container home-content">
       <div class="text">
         <h1>Nada Aznak</h1>
         <h2>Cloud & Virtualization Engineering</h2>
         <h3><span id="typed"></span></h3>
         <div class="buttons">
-          <a href="resume/cv_fr.pdf" class="btn primary">Télécharger le CV (FR)</a>
-          <a href="resume/cv_en.pdf" class="btn secondary">CV (EN)</a>
-          <a href="https://github.com/nada12-b" class="btn secondary">GitHub</a>
-          <a href="https://linkedin.com/in/nada-aznak-672aa3303" class="btn secondary">LinkedIn</a>
+          <a class="btn primary" href="resume/cv_fr.pdf" target="_blank">Télécharger le CV</a>
+          <a class="btn secondary" href="resume/cv_en.pdf" target="_blank">Download CV</a>
+          <a class="btn secondary" href="https://github.com/nada12-b" target="_blank">GitHub</a>
+          <a class="btn secondary" href="http://linkedin.com/in/nada-aznak-672aa3303" target="_blank">LinkedIn</a>
         </div>
       </div>
       <div class="photo">
-        <img src="assets/img/profile.jpg" alt="Photo de Nada Aznak" />
+        <img src="assets/img/profile.jpg" alt="Nada Aznak" />
       </div>
     </div>
   </section>
 
-  <!-- ===== À propos ===== -->
+  <!-- About -->
   <section id="about" class="fade-in">
-    <h2>À propos</h2>
-    <p>
-      Étudiante passionnée par les technologies Cloud, la Virtualisation et le Big Data,
-      je conçois des solutions performantes, scalables et sécurisées.
-      Je combine rigueur technique, curiosité intellectuelle et esprit d’analyse
-      pour créer des projets innovants alliant développement logiciel, infrastructure cloud
-      et intelligence artificielle.
-    </p>
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Étudiante passionnée par les technologies Cloud, la Virtualisation et le Big Data, je conçois des solutions performantes, scalables et sécurisées. Je combine rigueur technique, curiosité intellectuelle et esprit d’analyse pour créer des projets innovants alliant développement logiciel, infrastructure cloud et intelligence artificielle.</p>
+    </div>
   </section>
 
-  <!-- ===== Compétences ===== -->
+  <!-- Skills -->
   <section id="skills" class="fade-in">
-    <h2>Compétences</h2>
-    <ul class="skills-list">
-      <li><strong>Programmation :</strong> Python, C, JavaScript, TypeScript, Java, SQL</li>
-      <li><strong>Développement Web/Mobile :</strong> HTML, CSS, React, Angular, Node.js, Express, RESTful APIs, Redux, Flutter</li>
-      <li><strong>Cloud & Virtualisation :</strong> Azure, AWS, Google Cloud, Serverless, DevOps</li>
-      <li><strong>Gestion des Données :</strong> SQL, NoSQL (MongoDB, MySQL), Big Data, BI, Data Warehousing</li>
-      <li><strong>Architecture Cloud :</strong> Microservices, API RESTful, Serverless, Cloud Native</li>
-      <li><strong>Réseaux & Systèmes :</strong> SDN, Linux, Windows, Virtualisation (VMware)</li>
-      <li><strong>Outils :</strong> Git, Docker, Kubernetes, Azure DevOps</li>
-    </ul>
+    <div class="container">
+      <h2>Compétences</h2>
+      <ul class="skills-list">
+        <li><strong>Programmation :</strong> Python, C, JavaScript, TypeScript, Java, SQL</li>
+        <li><strong>Développement Web/Mobile :</strong> HTML, CSS, React, Angular, Node.js, Express, RESTful APIs, Redux, Flutter</li>
+        <li><strong>Cloud & Virtualisation :</strong> Azure, AWS, Google Cloud, Serverless, DevOps</li>
+        <li><strong>Gestion des Données :</strong> SQL, NoSQL (MongoDB, MySQL), Cloud Data Warehousing, Big Data, BI</li>
+        <li><strong>Architecture Cloud :</strong> Microservices, API RESTful, Serverless, Cloud Native</li>
+        <li><strong>Réseaux & Systèmes :</strong> SDN, Linux, Windows, Virtualisation (VMware)</li>
+        <li><strong>Outils & Technologies :</strong> Git, Docker, Kubernetes, Azure DevOps, Cloud Functions</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- ===== Projets ===== -->
+  <!-- Projects -->
   <section id="projects" class="fade-in">
-    <h2>Projets</h2>
-    <div class="projects-grid">
-      <!-- Exemple -->
-      <div class="card hover-lift">
-        <h3>🌍 Earthquake Alert – Real-Time Big Data Monitoring</h3>
-        <p>Système de surveillance des séismes basé sur Kafka + ELK + Docker.</p>
-        <p><em>Compétences :</em> Python, Apache Kafka, Elasticsearch, Logstash, Docker</p>
+    <div class="container">
+      <h2>Projets</h2>
+      <div class="projects-grid">
+        <div class="card"><h3>🧠 AI-Powered Mental Health Advisor</h3><p>Conseiller santé mentale IA (chatbot + avatar). Azure Search et D‑ID pour interactions naturelles.</p><p><em>Compétences :</em> Azure Cognitive Services · D‑ID · Speech‑to‑Text · React · Flask</p></div>
+        <div class="card"><h3>💼 Application de Gestion de Ventes (Java & MySQL)</h3><p>Desktop gestion ventes/produits/utilisateurs. Profils Admin & Vendeur.</p><p><em>Compétences :</em> Java Swing · JDBC · MySQL · NetBeans · Maven</p></div>
+        <div class="card"><h3>🍽️ JavaFX — Gestion Restaurant Universitaire</h3><p>Commande de repas et suivi stocks. Réservations étudiantes.</p><p><em>Compétences :</em> JavaFX · MySQL · MVC</p></div>
+        <div class="card"><h3>📚 Python — Gestion de Bibliothèque</h3><p>Emprunt jusqu’à 3 livres/7j, admin retards et comptes.</p><p><em>Compétences :</em> Python · Tkinter · SQLite · OOP</p></div>
+        <div class="card"><h3>📊 BI — Sales Data Warehouse (AdventureWorks)</h3><p>Data Warehouse ventes (schéma en flocon) + ETL + analyses.</p><p><em>Compétences :</em> SQL · T‑SQL · ETL · Power BI</p></div>
+        <div class="card"><h3>☁️ Web App scalable sur AWS</h3><p>ALB, Auto Scaling, RDS Multi‑AZ. Testée 100k requêtes, 99.9% disponibilité.</p><p><em>Compétences :</em> EC2 · ALB · IAM · RDS · CloudWatch · Cloud9</p></div>
+        <div class="card"><h3>🗄️ Cloud Data Warehousing — DB distribuée</h3><p>Base distribuée (Oracle + MobaXterm). Fragmentations + tables globales.</p><p><em>Compétences :</em> Oracle · SQL*Plus · MobaXterm</p></div>
+        <div class="card"><h3>🌐 Serveur Web sur OpenStack</h3><p>Déploiement Apache/Nginx sur OpenStack. IP flottantes, Cinder, règles d’accès.</p><p><em>Compétences :</em> DevStack · PackStack · Keystone · Neutron · Ubuntu</p></div>
+        <div class="card"><h3>🛒 Plateforme E‑commerce — ShopFlex (Azure)</h3><p>Frontend React/TS + backend Node/Express. Déploiement Azure App Service, Front Door, Key Vault, Redis.</p><p><em>Compétences :</em> React · TypeScript · Redux · MySQL · API REST · Azure</p></div>
+        <div class="card"><h3>🌍 Earthquake Alert — Real‑Time Big Data</h3><p>Surveillance séismes avec Kafka + ELK + Docker. USGS en temps réel, dashboards Kibana.</p><p><em>Compétences :</em> Python · Kafka · Elasticsearch · Logstash · Docker</p></div>
+        <div class="card"><h3>🧩 Implémentations parallèles de LCS</h3><p>Comparaison MPI, UPC, CUDA pour LCS.</p><p><em>Compétences :</em> C · MPI · UPC · CUDA · NVIDIA GPU</p></div>
+        <div class="card"><h3>💬 Cloud — Mental Health Appointment System</h3><p>Réservation de séances de thérapie. Confirmations & rappels via Azure Communication Service.</p><p><em>Compétences :</em> Azure Static Web App · MySQL · Azure Communication Service</p></div>
+        <div class="card"><h3>🔋 IoT — Classroom Usage Optimization</h3><p>Automatisation lumière/ventilation selon occupation. Interface temps réel.</p><p><em>Compétences :</em> Arduino · IoT · Capteurs · RTC · Python</p></div>
       </div>
-
-      <div class="card hover-lift">
-        <h3>🧠 AI-Powered Mental Health Advisor</h3>
-        <p>Conseiller IA intégrant un chatbot intelligent et un avatar interactif (Azure + D-ID).</p>
-        <p><em>Compétences :</em> Azure Cognitive Services, D-ID, Speech-to-Text, React, Flask</p>
-      </div>
-
-      <!-- Ajoute ici les 11 autres projets dans le même format -->
     </div>
   </section>
 
-  <!-- ===== Expérience ===== -->
+  <!-- Experience -->
   <section id="experience" class="fade-in">
-    <h2>Expérience</h2>
-    <div class="experience-list">
-      <div class="exp-card hover-lift">
-        <h3>Stage d’initiation – Amendis (Août 2023)</h3>
-        <p>Développement d’une application de gestion des interventions (PHP, MySQL).
-        Participation à la modélisation de base de données et maintenance réseau.</p>
-      </div>
-
-      <div class="exp-card hover-lift">
-        <h3>Stage Technicien – EQDOM (Juil-Août 2024)</h3>
-        <p>Application web & mobile de simulation de crédit (React Native, Angular, Spring Boot).
-        Intégration Keycloak (SSO), gestion Agile/Scrum.</p>
-      </div>
-
-      <div class="exp-card hover-lift">
-        <h3>Stage Assistant – CNRST (Juin-Août 2025)</h3>
-        <p>Analyse HPC via NAS Parallel Benchmarks, création d’un tableau de bord interactif,
-        recommandations pour l’optimisation des ressources.</p>
+    <div class="container">
+      <h2>Expérience</h2>
+      <div class="experience-list">
+        <div class="exp-card"><h3>Stage d’initiation — Amendis (01/08/2023 – 31/08/2023)</h3><p>Développement d’une application de gestion des interventions (PHP, MySQL). Participation à la modélisation de base de données et à la maintenance du réseau. Familiarisation avec les outils de support technique et les pratiques ITIL.</p></div>
+        <div class="exp-card"><h3>Stage Technicien — EQDOM (Juillet 2024 – Août 2024)</h3><p>Application de simulation de crédit web & mobile (React Native, Angular, Spring Boot). Calcul d’amortissement, export PDF, partage WhatsApp, historique. Agile/Scrum avec Jira, SSO via Keycloak.</p></div>
+        <div class="exp-card"><h3>Stage Assistant — CNRST (Juin 2025 – Août 2025)</h3><p>Analyse NPB pour évaluer les performances HPC. Tableau de bord interactif et recommandations pour optimiser l’allocation des ressources.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Éducation ===== -->
+  <!-- Education -->
   <section id="education" class="fade-in">
-    <h2>Éducation</h2>
-    <p>Étudiante ingénieure en Cloud Computing & Virtualization – Université Internationale de Rabat (UIR)</p>
+    <div class="container">
+      <h2>Éducation</h2>
+      <p>Ingénierie Cloud & Virtualisation — Université Internationale de Rabat (UIR)</p>
+    </div>
   </section>
 
-  <!-- ===== Langues ===== -->
+  <!-- Languages -->
   <section id="languages" class="fade-in">
-    <h2>Langues</h2>
-    <ul>
-      <li>🇫🇷 Français – Courant</li>
-      <li>🇬🇧 Anglais – Courant </li>
-      <li>🇦🇪 Arabe – Langue maternelle</li>
-      <li>🇪🇸 Espagnol – Niveau intermédiaire</li>
-    </ul>
+    <div class="container">
+      <h2>Langues</h2>
+      <ul>
+        <li>🇫🇷 Français — Courant</li>
+        <li>🇬🇧 Anglais — Courant</li>
+        <li>🇲🇦 Arabe — Langue maternelle</li>
+        <li>🇪🇸 Espagnol — Intermédiaire</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- ===== Contact ===== -->
+  <!-- Contact -->
   <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p><strong>Email :</strong> <a href="mailto:nada.aznak@uir.ac.ma">nada.aznak@uir.ac.ma</a></p>
-    <p><strong>Téléphone :</strong> +212 6 82 67 00 50</p>
+    <div class="container">
+      <h2>Contact</h2>
+      <p><strong>Email :</strong> <a href="mailto:nada.aznak@uir.ac.ma">nada.aznak@uir.ac.ma</a></p>
+      <p><strong>Téléphone :</strong> +212 6 82 67 00 50</p>
+    </div>
   </section>
 
   <footer>
