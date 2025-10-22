@@ -8,6 +8,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/custom.css" />
+  <style>
+    /* Mini style de secours au cas où custom.css ne charge pas */
+    body { font-family: 'Poppins', sans-serif; margin:0; padding:0; background:#fafaff; color:#12130f; }
+    header { background:white; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+    nav.container { display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; }
+    .logo { font-weight:800; font-size:1.4rem; color:#4527a0; }
+    .nav-links { list-style:none; display:flex; gap:1.5rem; margin:0; padding:0; }
+    .nav-links a { text-decoration:none; color:#12130f; font-weight:600; }
+    .nav-links a.active { color:#6a1b9a; border-bottom:2px solid #6a1b9a; }
+    .container { max-width:1100px; margin:auto; padding:2rem; }
+    .cert-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:25px; margin-top:2rem; }
+    .cert-card { background:white; border-radius:16px; padding:1rem; box-shadow:0 10px 20px rgba(0,0,0,0.05); text-align:center; transition:transform .2s; }
+    .cert-card:hover { transform:translateY(-5px); }
+    .cert-card img { width:80px; height:auto; margin-bottom:10px; }
+    .btn.primary { display:inline-block; background:#6a1b9a; color:white; text-decoration:none; padding:8px 18px; border-radius:25px; margin-top:10px; font-size:0.9rem; }
+    .btn.primary:hover { background:#4a0072; }
+    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#777; }
+  </style>
 </head>
 <body>
   <header>
@@ -23,50 +41,50 @@
   <section id="certifications" class="fade-in">
     <div class="container">
       <h1>🎓 Mes Certifications</h1>
-      <p>Un aperçu de mes badges techniques — cloud, sécurité, data et gestion de projet.</p>
+      <p>Un aperçu de mes badges techniques en Cloud, Sécurité, Données et Gestion de projet.</p>
 
       <div class="cert-grid">
 
         <div class="cert-card">
           <img src="assets/img/aws.svg" alt="AWS">
           <h3>AWS Academy Cloud Foundations</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/62fed766-a6a7-434b-8b6d-ff600186f3a3/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/62fed766-a6a7-434b-8b6d-ff600186f3a3/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
           <img src="assets/img/aws.svg" alt="AWS">
           <h3>AWS Academy Cloud Architecting</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/15020814-f550-445e-bb59-aa57f82e7d91/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/15020814-f550-445e-bb59-aa57f82e7d91/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
           <img src="assets/img/aws.svg" alt="AWS">
           <h3>AWS Academy Cloud Web Application Builder</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/185b1b5f-4bb6-4f62-b300-247aeac1b737/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/185b1b5f-4bb6-4f62-b300-247aeac1b737/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
           <img src="assets/img/cisco.svg" alt="Cisco">
           <h3>Endpoint Security (Cisco)</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/971e216d-8a86-470f-a397-a6b4b32bfb91/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/971e216d-8a86-470f-a397-a6b4b32bfb91/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
           <img src="assets/img/cisco.svg" alt="Cisco">
           <h3>Introduction to Data Science (Cisco)</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/6b4e47da-6a4e-4b64-b20b-ef43be0185db/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/6b4e47da-6a4e-4b64-b20b-ef43be0185db/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
           <img src="assets/img/cisco.svg" alt="Cisco">
           <h3>Introduction to IoT (Cisco)</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/af403f4c-7284-4176-8306-d6667e3a363a/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/af403f4c-7284-4176-8306-d6667e3a363a/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
           <img src="assets/img/cisco.svg" alt="Cisco">
           <h3>Networking Basics (Cisco)</h3>
-          <a class="btn primary" target="_blank" href="https://www.credly.com/badges/3c103be3-ec88-49ba-a4a4-75f1a2183a87/linked_in_profile">Voir sur Credly</a>
+          <a class="btn primary" href="https://www.credly.com/badges/3c103be3-ec88-49ba-a4a4-75f1a2183a87/linked_in_profile" target="_blank">Voir sur Credly</a>
         </div>
 
         <div class="cert-card">
@@ -79,6 +97,8 @@
     </div>
   </section>
 
-  <footer><p>© 2025 Nada Aznak — All rights reserved.</p></footer>
+  <footer>
+    <p>© 2025 Nada Aznak — All rights reserved.</p>
+  </footer>
 </body>
 </html>
