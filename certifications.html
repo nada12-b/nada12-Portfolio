@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Certifications — Nada Aznak</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <style>body{font-family:'Poppins',sans-serif}</style>
+  <link rel="stylesheet" href="assets/css/custom.css" />
 </head>
-<body>
-  <nav class="white z-depth-0">
-    <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo black-text">NA</a>
-      <a href="index.html" class="right black-text" style="margin-right:12px;">← Retour</a>
-    </div>
-  </nav>
 
-  <section class="section">
-    <div class="container">
-      <h4 class="teal-text text-darken-1">Certifications</h4>
-      <div class="cert-grid">
-        <div class="cert-card"><h6>AWS Academy Cloud Foundation</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/62fed766-a6a7-434b-8b6d-ff600186f3a3/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>AWS Academy Cloud Architecting</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/15020814-f550-445e-bb59-aa57f82e7d91/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>AWS Academy Cloud Web Application Builder</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/185b1b5f-4bb6-4f62-b300-247aeac1b737/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>Cisco — Endpoint Security</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/971e216d-8a86-470f-a397-a6b4b32bfb91/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>Cisco — Introduction to Data Science</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/6b4e47da-6a4e-4b64-b20b-ef43be0185db/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>Cisco — Introduction to IoT</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/af403f4c-7284-4176-8306-d6667e3a363a/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>Cisco — Networking Basics</h6><a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/3c103be3-ec88-49ba-a4a4-75f1a2183a87/linked_in_profile">Voir certificat</a></div>
-        <div class="cert-card"><h6>HP LIFE — Agile Project Management</h6><a class="btn disabled" href="#!">À venir</a></div>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header>
+    <nav>
+      <div class="logo">NA</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#certifications" class="active">Certifications</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Section Certifications ===== -->
+  <section id="certifications" class="fade-in">
+    <h1>🎓 Mes Certifications</h1>
+    <p>Voici un aperçu de mes certifications professionnelles et académiques.</p>
+
+    <div class="certifications-grid">
+
+      <!-- AWS -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/aws.png" alt="AWS Certification" />
+        <h3>AWS Academy Cloud Foundations</h3>
+        <a href="https://www.credly.com/badges/62fed766-a6a7-434b-8b6d-ff600186f3a3/linked_in_profile" class="btn primary" target="_blank">Voir sur Credly</a>
       </div>
+
+      <!-- Cisco -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/cisco.png" alt="Cisco" />
+        <h3>Cisco Networking Essentials</h3>
+        <a href="https://www.credly.com/badges/15020814-f550-445e-bb59-aa57f82e7d91/linked_in_profile" class="btn primary" target="_blank">Voir sur Credly</a>
+      </div>
+
+      <!-- Microsoft Azure -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/azure.png" alt="Microsoft Azure" />
+        <h3>Azure Fundamentals (AZ-900)</h3>
+        <a href="https://www.credly.com/badges/185b1b5f-4bb6-4f62-b300-247aeac1b737/linked_in_profile" class="btn primary" target="_blank">Voir sur Credly</a>
+      </div>
+
+      <!-- Google Cloud -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/google.png" alt="Google Cloud" />
+        <h3>Google Cloud Fundamentals</h3>
+        <a href="https://www.credly.com/badges/971e216d-8a86-470f-a397-a6b4b32bfb91/linked_in_profile" class="btn primary" target="_blank">Voir sur Credly</a>
+      </div>
+
+      <!-- IBM AI -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/ibm.png" alt="IBM AI" />
+        <h3>IBM Applied AI Professional Certificate</h3>
+        <a href="https://www.credly.com/badges/6b4e47da-6a4e-4b64-b20b-ef43be0185db/linked_in_profile" class="btn primary" target="_blank">Voir sur Credly</a>
+      </div>
+
+      <!-- CompTIA -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/comptia.png" alt="CompTIA" />
+        <h3>CompTIA Cloud Essentials+</h3>
+        <a href="https://www.credly.com/badges/af403f4c-7284-4176-8306-d6667e3a363a/linked_in_profile" class="btn primary" target="_blank">Voir sur Credly</a>
+      </div>
+
+      <!-- HP LIFE -->
+      <div class="cert-card hover-lift">
+        <img src="assets/img/hp.png" alt="HP LIFE" />
+        <h3>HP LIFE – Agile Project Management</h3>
+        <img src="assets/img/hp_certificate.png" alt="Certificat HP LIFE" class="hp-cert"/>
+      </div>
+
     </div>
   </section>
 
-  <footer class="footer center grey lighten-4"><div class="container">© 2025 Nada Aznak · Certifications</div></footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <footer>
+    <p>© 2025 Nada Aznak — All rights reserved.</p>
+  </footer>
 </body>
 </html>
