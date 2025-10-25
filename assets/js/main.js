@@ -1,28 +1,17 @@
-// Loader avant affichage de la page
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
-  loader.style.opacity = "0";
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 600);
+  if (loader) {
+    loader.style.opacity = "0";
+    setTimeout(() => loader.remove(), 600);
+  }
 });
 
-// Effet fade-in sur scroll
+// Animation fade-in sur scroll
 const faders = document.querySelectorAll(".fade-in");
-
-const appearOptions = {
-  threshold: 0.2,
-  rootMargin: "0px 0px -50px 0px"
-};
-
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("visible");
-    observer.unobserve(entry.target);
+    if (entry.isIntersecting) entry.target.classList.add("visible");
   });
-}, appearOptions);
+}, { threshold: 0.2 });
 
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
+faders.forEach(fader => observer.observe(fader));
