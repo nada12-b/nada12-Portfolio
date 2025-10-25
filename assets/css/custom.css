@@ -169,3 +169,39 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+/* ===== Photo de profil ===== */
+.photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 320px;          /* taille idéale de portrait */
+  height: auto;
+  border-radius: 20px;   /* coins arrondis doux */
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(122, 60, 255, 0.25);
+}
+
+/* Disposition section d’accueil */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 0;
+}
+
+.home-content .text {
+  flex: 1;
+  min-width: 280px;
+}
+
