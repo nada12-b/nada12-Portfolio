@@ -1,255 +1,73 @@
-/* 🎨 Style principal du Portfolio de Nada Aznak */
-
-/* Couleurs principales */
-:root {
-  --main-color: #b08df0;
-  --text-color: #222;
-  --bg-color: #faf8ff;
-  --light-text: #666;
+/* === SECTION PROJETS === */
+#projets {
+  padding: 80px 0;
+  background-color: #f8f4ff; /* Mauve très clair */
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
-}
-
-/* Loader */
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 1000;
-}
-
-.loader-content h2 {
-  color: var(--main-color);
-  font-weight: 600;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.spinner {
-  width: 45px;
-  height: 45px;
-  border: 5px solid #ddd;
-  border-top-color: var(--main-color);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-/* Header */
-header {
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-  z-index: 900;
-}
-
-.container {
+#projets .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
-
-.logo {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--main-color);
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: var(--text-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
+#projets h2 {
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #5b36d6; /* Mauve tech */
+  letter-spacing: 1px;
   position: relative;
 }
 
-.nav-links li a:hover {
-  color: var(--main-color);
+#projets h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #a47cf3, #5b36d6);
+  margin: 10px auto 0;
+  border-radius: 5px;
 }
 
-.nav-links li a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -3px;
-  left: 0;
-  background: var(--main-color);
-  transition: 0.3s;
+/* Grille des projets */
+.project {
+  background: white;
+  border-radius: 14px;
+  padding: 25px 30px;
+  margin: 25px 0;
+  box-shadow: 0 5px 15px rgba(100, 80, 200, 0.1);
+  transition: all 0.3s ease;
+  border-left: 6px solid #a47cf3;
 }
 
-.nav-links li a:hover::after {
-  width: 100%;
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(100, 80, 200, 0.2);
+  border-left-color: #5b36d6;
 }
 
-/* Sections */
-section {
-  padding: 80px 0;
-}
-
-h2 {
-  color: var(--main-color);
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 25px;
-}
-
-/* Hero */
-.home-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.home-content h1 {
-  font-size: 2.8rem;
-  color: var(--main-color);
-}
-
-.home-content h2 {
-  font-size: 1.5rem;
-  margin: 10px 0;
-  color: var(--text-color);
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.btn {
-  text-decoration: none;
-  padding: 10px 22px;
-  border-radius: 30px;
-  border: 2px solid var(--main-color);
-  margin: 5px;
-  display: inline-block;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.btn.primary {
-  background: var(--main-color);
-  color: white;
-}
-
-.btn.secondary {
-  color: var(--main-color);
-}
-
-.btn:hover {
-  box-shadow: 0 0 15px rgba(176, 141, 240, 0.6);
-  transform: translateY(-2px);
-}
-
-/* Photo */
-.photo img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 0 25px rgba(176, 141, 240, 0.3);
-}
-
-/* Skills */
-.skills-list {
-  list-style: none;
-  text-align: center;
-  line-height: 1.8;
-  color: var(--light-text);
-}
-
-/* Cards (Projets & Expériences) */
-.projects-grid, .certifications-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.card, .exp-card, .cert-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.card:hover, .exp-card:hover, .cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(176, 141, 240, 0.2);
-}
-
-.cert-card img {
-  width: 70px;
+.project h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #3c2a8a;
   margin-bottom: 10px;
 }
 
-.hp-cert {
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
-  box-shadow: 0 0 15px rgba(176, 141, 240, 0.3);
+.project p {
+  line-height: 1.6;
+  font-size: 0.96em;
+  color: #444;
+  margin-bottom: 8px;
 }
 
-/* Langues */
-ul {
-  list-style: none;
-  text-align: center;
-  line-height: 1.8;
-  color: var(--light-text);
-}
-
-/* Footer */
-footer {
-  background: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  color: var(--light-text);
-}
-
-/* Fade-in animation */
+/* Fade-in Animation */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.7s ease-out;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-in.visible {
@@ -258,16 +76,20 @@ footer {
 }
 
 /* Responsive */
+@media (min-width: 768px) {
+  #projets .project {
+    margin: 25px 15px;
+  }
+}
+
 @media (max-width: 768px) {
-  .home-content {
-    flex-direction: column-reverse;
-    text-align: center;
+  #projets {
+    padding: 50px 15px;
   }
-  .photo img {
-    margin-top: 20px;
+  #projets h2 {
+    font-size: 1.9em;
   }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
+  .project {
+    padding: 20px;
   }
 }
