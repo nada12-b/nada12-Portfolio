@@ -4,14 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nada Aznak — Cloud & Virtualization Engineering</title>
+  <meta name="description" content="Portfolio officiel de Nada Aznak, étudiante en ingénierie Cloud & Virtualisation à l’Université Internationale de Rabat (UIR).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/custom.css" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script defer src="assets/js/main.js"></script>
 </head>
-
 <body>
   <!-- Loader -->
   <div id="loader">
@@ -31,34 +30,33 @@
         <li><a href="#projects">Projets</a></li>
         <li><a href="#experience">Expérience</a></li>
         <li><a href="#education">Éducation</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
         <li><a href="#languages">Langues</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Section Accueil -->
   <section id="home" class="fade-in">
     <div class="container home-content">
       <div class="text">
         <h1>Nada Aznak</h1>
         <h2>Cloud & Virtualization Engineering</h2>
-        <h3><span id="typed"></span></h3>
         <div class="buttons">
-          <a class="btn primary" href="resume/cv_fr.pdf" target="_blank">Télécharger le CV</a>
-          <a class="btn secondary" href="resume/cv_en.pdf" target="_blank">Download CV</a>
+          <a class="btn primary" href="resume/cv_fr.pdf" target="_blank">Télécharger CV (FR)</a>
+          <a class="btn secondary" href="resume/cv_en.pdf" target="_blank">Download CV (EN)</a>
           <a class="btn secondary" href="https://github.com/nada12-b" target="_blank">GitHub</a>
-          <a class="btn secondary" href="https://linkedin.com/in/nada-aznak-672aa3303" target="_blank">LinkedIn</a>
+          <a class="btn secondary" href="http://linkedin.com/in/nada-aznak-672aa3303" target="_blank">LinkedIn</a>
         </div>
       </div>
       <div class="photo">
-        <img src="assets/img/profile.jpg" alt="Nada Aznak" />
+        <img src="assets/img/profile.jpg" alt="Nada Aznak">
       </div>
     </div>
   </section>
 
-  <!-- About -->
+  <!-- À propos -->
   <section id="about" class="fade-in">
     <div class="container">
       <h2>À propos</h2>
@@ -66,7 +64,7 @@
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- Compétences -->
   <section id="skills" class="fade-in">
     <div class="container">
       <h2>Compétences</h2>
@@ -82,71 +80,43 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- Projets -->
   <section id="projects" class="fade-in">
     <div class="container">
       <h2>Projets</h2>
       <div class="projects-grid">
-        <div class="card"><h3>🌍 Earthquake Alert — Real-Time Big Data</h3><p>Système de surveillance des séismes avec Kafka + ELK + Docker. Données USGS et dashboards Kibana.</p></div>
-        <div class="card"><h3>☁️ Web App scalable sur AWS</h3><p>Architecture AWS (ALB, Auto Scaling, RDS Multi-AZ) testée à 100k requêtes.</p></div>
-        <div class="card"><h3>🍽️ JavaFX — Gestion du Restaurant Universitaire</h3><p>Application JavaFX pour gestion repas et stocks étudiants.</p></div>
-        <div class="card"><h3>📚 Python — Gestion de Bibliothèque</h3><p>Application desktop gestion emprunts, retards et comptes étudiants.</p></div>
-        <div class="card"><h3>🧠 AI-Powered Mental Health Advisor</h3><p>Chatbot interactif avec Azure Cognitive Services et D-ID.</p></div>
+        <div class="card"><h3>🧠 AI-Powered Mental Health Advisor</h3><p>Chatbot IA avec D-ID & Azure Search.</p><p><em>Tech :</em> Azure Cognitive Services · Flask · React</p></div>
+        <div class="card"><h3>💼 Gestion de Ventes (Java & MySQL)</h3><p>Application desktop de gestion ventes.</p><p><em>Tech :</em> Java Swing · JDBC · MySQL</p></div>
+        <div class="card"><h3>🍽️ Gestion Restaurant Universitaire</h3><p>Application JavaFX pour commandes et stocks.</p><p><em>Tech :</em> JavaFX · MVC · MySQL</p></div>
+        <div class="card"><h3>📚 Gestion de Bibliothèque (Python)</h3><p>Application desktop avec interface admin.</p><p><em>Tech :</em> Tkinter · SQLite</p></div>
+        <div class="card"><h3>🌍 Earthquake Alert</h3><p>Système Big Data temps réel via Kafka + ELK.</p><p><em>Tech :</em> Python · Docker · Kibana</p></div>
+        <div class="card"><h3>🛒 ShopFlex — E-commerce (Azure)</h3><p>App REST React/Node déployée sur Azure.</p><p><em>Tech :</em> TypeScript · Redux · MySQL</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- Expérience -->
   <section id="experience" class="fade-in">
     <div class="container">
       <h2>Expérience</h2>
-      <div class="experience-list">
-        <div class="exp-card"><h3>Stage d’initiation — Amendis (Août 2023)</h3><p>Développement d’une application PHP/MySQL pour la gestion d’interventions et maintenance du réseau.</p></div>
-        <div class="exp-card"><h3>Stage Technicien — EQDOM (Juillet–Août 2024)</h3><p>Application de simulation de crédit (React Native, Spring Boot, Keycloak).</p></div>
-        <div class="exp-card"><h3>Stage Assistant — CNRST (Juin–Août 2025)</h3><p>Analyse HPC (NPB) et tableau de bord interactif pour visualisation de performance.</p></div>
-      </div>
+      <div class="exp-card"><h3>Stage d’initiation — Amendis (Août 2023)</h3><p>Développement d’une application de gestion des interventions (PHP, MySQL). Participation à la modélisation de base de données et à la maintenance réseau.</p></div>
+      <div class="exp-card"><h3>Stage Technicien — EQDOM (Juil–Août 2024)</h3><p>App web & mobile de simulation de crédit (React Native, Angular, Spring Boot). Intégration Keycloak et gestion agile via Jira.</p></div>
+      <div class="exp-card"><h3>Stage Assistant — CNRST (Juin–Août 2025)</h3><p>Analyse HPC & visualisation NPB via dashboard. Optimisation de l’allocation des ressources et performances.</p></div>
     </div>
   </section>
 
-  <!-- Education -->
+  <!-- Éducation -->
   <section id="education" class="fade-in">
     <div class="container">
       <h2>Éducation</h2>
-      <p><strong>Université Internationale de Rabat (UIR)</strong> — ESIN, Ingénierie en Cloud Computing & Virtualization (2023–2026)</p>
-      <p><strong>Université Internationale de Rabat (UIR)</strong> — Cycle Préparatoire Intégré en Ingénierie Informatique (2021–2023)</p>
-      <p><strong>Lycée Baraim El-Razi, Tétouan</strong> — Baccalauréat en Sciences Physiques et Chimiques (2018–2021)</p>
+      <p><strong>Université Internationale de Rabat</strong><br>
+      ESIN – Ingénierie en Cloud Computing & Virtualization (2023–2026)</p>
+      <p>ESIN – Cycle Préparatoire Intégré en Ingénierie Informatique (2021–2023)</p>
+      <p>Lycée Baraim El Razi, Tétouan — Baccalauréat Sciences Physiques et Chimiques (2018–2021)</p>
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section id="certifications" class="fade-in">
-    <div class="container">
-      <h2>Certifications</h2>
-      <p>Voici un aperçu de mes certifications Cloud, Sécurité, Data et Gestion de projet.</p>
-      <div class="certifications-grid">
-        <a class="cert-card" href="https://www.credly.com/badges/62fed766-a6a7-434b-8b6d-ff600186f3a3" target="_blank">
-          <img src="assets/img/aws.svg" alt="AWS"><h3>AWS Academy Cloud Foundations</h3>
-        </a>
-        <a class="cert-card" href="https://www.credly.com/badges/15020814-f550-445e-bb59-aa57f82e7d91" target="_blank">
-          <img src="assets/img/aws.svg" alt="AWS"><h3>AWS Academy Cloud Architecting</h3>
-        </a>
-        <a class="cert-card" href="https://www.credly.com/badges/971e216d-8a86-470f-a397-a6b4b32bfb91" target="_blank">
-          <img src="assets/img/cisco.svg" alt="Cisco"><h3>Endpoint Security (Cisco)</h3>
-        </a>
-        <a class="cert-card" href="https://www.credly.com/badges/6b4e47da-6a4e-4b64-b20b-ef43be0185db" target="_blank">
-          <img src="assets/img/cisco.svg" alt="Cisco"><h3>Introduction to Data Science (Cisco)</h3>
-        </a>
-        <div class="cert-card">
-          <a href="https://www.life-global.org/" target="_blank">
-            <img src="assets/img/hp.svg" alt="HP LIFE"><h3>HP LIFE — Agile Project Management</h3>
-          </a>
-          <img src="assets/img/hp_certificate.png" alt="HP LIFE Certificate" class="hp-cert">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Languages -->
+  <!-- Langues -->
   <section id="languages" class="fade-in">
     <div class="container">
       <h2>Langues</h2>
